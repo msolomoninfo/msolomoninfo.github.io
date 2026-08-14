@@ -302,6 +302,9 @@ a {
 }
 
 /* ---------- Projects ---------- */
+#projects .section-inner {
+  padding-top: 110px;
+}
 .project-list {
   display: flex;
   flex-direction: column;
