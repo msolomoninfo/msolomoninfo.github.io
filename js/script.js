@@ -38,4 +38,30 @@
       observer.observe(section);
     });
   }
+
+  // Fade/slide in the about & experience cards as they enter the viewport.
+  var revealTargets = document.querySelectorAll('.about__photo, .about__card, .exp-card');
+  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (revealTargets.length && !prefersReducedMotion && 'IntersectionObserver' in window) {
+    revealTargets.forEach(function (el) {
+      el.classList.add('reveal');
+    });
+
+    var revealObserver = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealTargets.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  }
 })();
