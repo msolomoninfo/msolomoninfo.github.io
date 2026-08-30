@@ -192,6 +192,7 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
   .nav-links.open{display:flex;}
   .nav-links a{padding:12px 0;border-bottom:1px solid var(--orange-light);}
   .nav-links a:last-child{border-bottom:none;}
+  .nav-row .btn-primary{display:none;}
 }
 
 /* scroll-reveal (JS-driven) */
