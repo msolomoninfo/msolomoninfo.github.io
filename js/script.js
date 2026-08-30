@@ -1,41 +1,59 @@
-(function () {
-  var toggle = document.getElementById('nav-toggle');
-  var links = document.getElementById('nav-links');
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
 
-  if (toggle && links) {
-    toggle.addEventListener('click', function () {
-      var isOpen = links.classList.toggle('is-open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Close the mobile menu after a link is tapped
+  navLinks.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
     });
+  });
+}
 
-    links.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        links.classList.remove('is-open');
-        toggle.setAttribute('aria-expanded', 'false');
+// Highlight the nav link matching the section currently in view
+const sections = document.querySelectorAll('section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a');
+
+const setActiveLink = (id) => {
+  navAnchors.forEach((a) => {
+    const target = a.getAttribute('href')?.replace('#', '');
+    a.classList.toggle('active', target === id);
+  });
+};
+
+if (sections.length && navAnchors.length) {
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) setActiveLink(entry.target.id);
       });
-    });
-  }
+    },
+    { rootMargin: '-40% 0px -55% 0px' }
+  );
+  sections.forEach((section) => sectionObserver.observe(section));
+}
 
-  // Highlight the current section's nav link while scrolling.
-  var sections = document.querySelectorAll('main [id]');
-  var navAnchors = document.querySelectorAll('.nav__links a');
+// Fade/slide elements in as they scroll into view
+const revealEls = document.querySelectorAll('.reveal');
 
-  if (sections.length && navAnchors.length && 'IntersectionObserver' in window) {
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (!entry.isIntersecting) return;
-          var id = entry.target.getAttribute('id');
-          navAnchors.forEach(function (anchor) {
-            anchor.classList.toggle('is-active', anchor.getAttribute('href') === '#' + id);
-          });
-        });
-      },
-      { rootMargin: '-45% 0px -50% 0px' }
-    );
-
-    sections.forEach(function (section) {
-      observer.observe(section);
-    });
-  }
-})();
+if (revealEls.length) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  revealEls.forEach((el) => revealObserver.observe(el));
+}
