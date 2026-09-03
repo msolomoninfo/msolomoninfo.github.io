@@ -112,7 +112,7 @@ nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur
   margin-bottom:32px;
   transition:transform .15s ease, box-shadow .15s ease;
 }
-.proj-card:nth-child(even){background:var(--orange-light);}
+.proj-card:nth-child(even){background:var(--orange);}
 .proj-card:hover{transform:translate(-3px,-3px);box-shadow:9px 8px 0px 0px var(--border);}
 @media (max-width:800px){.proj-card{flex-direction:column;align-items:flex-start;}}
 .proj-text{flex:1;min-width:0;}
