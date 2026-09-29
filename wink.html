@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Solomon — WINK Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="page-case" id="top">
+
+  <nav>
+    <div class="wrap nav-row">
+      <a href="/index.html" class="logo"><span class="dot"></span>Michael Solomon</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/about.html">About</a>
+        <a href="/projects.html" class="active">Projects</a>
+        <a href="/index.html#skills">Skills</a>
+        <a href="/index.html#contact">Contact</a>
+      </div>
+      <a href="/index.html#contact" class="btn btn-primary">Let's Chat</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap case-back">
+      <a href="/projects.html" class="back-link">← Back to projects</a>
+    </div>
+
+    <!-- BANNER -->
+    <header class="wrap case-banner">
+      <h1>Wink</h1>
+      <p class="case-sub">A compatibility-first dating app, built to replace endless swiping with fewer, better matches</p>
+      <div class="case-meta">
+        <div class="meta-card">
+          <div class="k">Role</div>
+          <div class="v">UX Designer and Researcher</div>
+        </div>
+        <div class="meta-card">
+          <div class="k">Timeline</div>
+          <div class="v">8 weeks</div>
+        </div>
+        <div class="meta-card">
+          <div class="k">Team</div>
+          <div class="v">Solo Project</div>
+        </div>
+        <div class="meta-card">
+          <div class="k">Tools</div>
+          <div class="v">Figma</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- OBJECTIVE -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Overview</span>
+          <h2>The Objective</h2>
+        </div>
+        <div class="case-cols">
+          <div class="case-text">
+            <p>Wink is a dating platform built around <strong>compatibility over quantity</strong>. Instead of a
+              bottomless stack of strangers, its matching algorithm scores compatibility from a user's answers to
+              hundreds of questions about interests and core values, then surfaces a smaller pool of genuinely fitting
+              matches.</p>
+            <p>The goal wasn't just a prettier swipe screen, it was a more <strong>personalized and inclusive</strong>
+              experience for people who'd grown tired of superficial matching, ghosting, and apps that didn't reflect
+              who they actually are.</p>
+          </div>
+          <div class="case-text">
+            <p><strong class="soft">Constraints:</strong> a solo project with no dedicated engineering team every
+              research, design, and testing decision had to hold up on its own before any handoff.</p>
+            <p><strong class="soft">My role:</strong> research, personas, wireframes, visual design, and both rounds of
+              usability testing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Research</span>
+          <h2>Discovery</h2>
+        </div>
+        <div class="case-cols">
+          <div class="case-text">
+            <p>Three people, three very different reasons to be tired of dating apps. Before any screens got designed,
+              personas were built around the pain points that kept coming up: matches that go nowhere, time wasted on
+              the wrong fits, and apps that weren't built with everyone in mind.</p>
+          </div>
+          <div class="case-text">
+            <p class="list-title">Research methods:</p>
+            <ul>
+              <li>Persona development: Ava, Marcus, Jordan</li>
+              <li>Round 1: black and white wireframes, moderated with 5 testers</li>
+              <li>Round 2: clickable hi-fi prototype, moderated with 5 new testers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="persona-grid">
+          <article class="persona-card reveal">
+            <div class="persona-photo" role="img" aria-label="Ava persona photo"></div>
+            <h3>Ava, 28</h3>
+            <div class="persona-meta">UX Designer · Chicago, IL</div>
+            <div class="persona-label">Goal</div>
+            <ul>
+              <li>Meaningful connection</li>
+              <li>Shared values</li>
+              <li>Open to serious</li>
+            </ul>
+            <div class="persona-label">Pain point</div>
+            <ul>
+              <li>Superficial matches</li>
+              <li>Ghost culture</li>
+              <li>Misaligned expectations</li>
+            </ul>
+            <div class="persona-label">Bio</div>
+            <p>Ava is a 28-year-old UX Designer based in Chicago who brings the same thoughtfulness to dating that she
+              does to her work. She's past mindless swiping and now wants someone who actually reads her profile, shares
+              her values, and is open to seeing where things go.</p>
+          </article>
+
+          <article class="persona-card reveal">
+            <div class="persona-photo" role="img" aria-label="Marcus persona photo"></div>
+            <h3>Marcus, 32</h3>
+            <div class="persona-meta">Marketing Manager · New York, NY</div>
+            <div class="persona-label">Goal</div>
+            <ul>
+              <li>Committed relationship</li>
+              <li>Lifestyle compatibility</li>
+              <li>Firm on deal breakers</li>
+            </ul>
+            <div class="persona-label">Pain point</div>
+            <ul>
+              <li>Time wasted on bad fits</li>
+              <li>Unclear intentions</li>
+              <li>Endless swiping</li>
+            </ul>
+            <div class="persona-label">Bio</div>
+            <p>Marcus is a 35-year-old Marketing Manager from New York City who knows exactly what he's looking for and
+              has little patience for anything less. He's the type to set dealbreakers before he even starts browsing,
+              because his time is valuable and so is his energy.</p>
+          </article>
+
+          <article class="persona-card reveal">
+            <div class="persona-photo" role="img" aria-label="Jordan persona photo"></div>
+            <h3>Jordan, 24</h3>
+            <div class="persona-meta">Graduate Student · Austin, TX</div>
+            <div class="persona-label">Goal</div>
+            <ul>
+              <li>Safe, inclusive space</li>
+              <li>Identity expression</li>
+              <li>Community &amp; connection</li>
+            </ul>
+            <div class="persona-label">Pain point</div>
+            <ul>
+              <li>Binary gender options</li>
+              <li>Misgendering risk</li>
+              <li>Niche match pool</li>
+            </ul>
+            <div class="persona-label">Bio</div>
+            <p>Jordan is a 24-year-old graduate student in Austin, Texas, who has spent enough time on dating apps that
+              weren't built for them. Non binary and out, Jordan isn't just looking for a match but an inclusive space
+              where they don't have to explain themselves.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDEATE: VISUAL LANGUAGE -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Ideate</span>
+          <h2>From paper to pixels</h2>
+        </div>
+        <div class="case-split">
+          <div class="case-text narrow">
+            <p>Playful enough to flirt with, calm enough to trust</p>
+            <p>Pink, white, and purple carry the warmth and playfulness of the brand, while a soft, rounded UI keeps the
+              experience feeling cute rather than gimmicky.</p>
+            <div class="swatches" aria-label="Wink color palette">
+              <span class="swatch" style="background:#EA6FA3" title="Pink"></span>
+              <span class="swatch" style="background:#6C63E8" title="Purple"></span>
+              <span class="swatch" style="background:#F6C9DD" title="Light pink"></span>
+              <span class="swatch" style="background:#FFFFFF" title="White"></span>
+            </div>
+          </div>
+          <div class="case-frame frame-wide"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDEATE: ARCHITECTURE -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Ideate</span>
+          <h2>Four zones</h2>
+        </div>
+        <p class="case-lede">Before wireframing, I mapped the full app architecture from onboarding through discovery,
+          connection, and account support.</p>
+        <div class="case-frame frame-map"></div>
+      </div>
+    </section>
+
+    <!-- IDEATE: PAGE TYPES -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Ideate</span>
+          <h2>Five page types</h2>
+        </div>
+        <p class="case-lede">Each Page type was planned out to better understand the workflow.</p>
+
+        <h2 class="case-subhead">Low Fidelity</h2>
+        <div class="screen-row">
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+        </div>
+
+        <h2 class="case-subhead">High Fidelity</h2>
+        <div class="screen-row">
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+        </div>
+
+        <div class="page-types">
+          <div class="type-card">
+            <div class="t">Feed</div>
+            <div class="d">Card-stack browsing built for fast, high-interaction evaluation.</div>
+          </div>
+          <div class="type-card">
+            <div class="t">User Profile</div>
+            <div class="d">Expanded view with interests, prompts, and photos.</div>
+          </div>
+          <div class="type-card">
+            <div class="t">Messaging</div>
+            <div class="d">The communication hub, unlocked only after a mutual match.</div>
+          </div>
+          <div class="type-card">
+            <div class="t">Onboarding</div>
+            <div class="d">A sequential flow that gathers profile and preference data.</div>
+          </div>
+          <div class="type-card">
+            <div class="t">Settings</div>
+            <div class="d">Menu-driven controls for filters, privacy, and account.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEST: ROUND 1 -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Test</span>
+          <h2>Round 1: Low Fidelity Prototype</h2>
+        </div>
+        <div class="case-split">
+          <div class="case-text">
+            <p>Five testers walked through hand-drawn screens on index cards before a single pixel was designed — cheap
+              enough to throw away, real enough to expose problems early.</p>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task</th><th>Avg. time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1. Create account</td><td>2:37</td></tr>
+                <tr><td>2. Block &amp; report</td><td>3:03</td></tr>
+                <tr><td>3. Browse &amp; match</td><td>1:37</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td>Total per tester</td><td>7:27</td></tr>
+              </tfoot>
+            </table>
+            <p class="list-title plain">What informal testing found</p>
+            <ul>
+              <li>The report/block flow (Task 2) took the longest — testers weren't sure where to find it.</li>
+              <li>Some of the learning curve was the study format itself: several testers had never done a usability
+                session before.</li>
+              <li>Without color, the wireframe was genuinely hard to read for some participants.</li>
+            </ul>
+          </div>
+          <div class="case-frame frame-tall"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEST: ROUND 2 -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Test</span>
+          <h2>Round 2: High Fidelity Prototype</h2>
+        </div>
+        <div class="case-split">
+          <div class="case-text">
+            <p>The same three tasks, now run against an interactive Figma prototype held in-hand by five new testers
+              recruited from within the app's target age range.</p>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task</th><th>Avg. time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1. Create account</td><td>1:15</td></tr>
+                <tr><td>2. Block &amp; report</td><td>0:44</td></tr>
+                <tr><td>3. Browse &amp; match</td><td>0:49</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td>Total per tester</td><td>2:44</td></tr>
+              </tfoot>
+            </table>
+            <p class="list-title plain">What formal testing found</p>
+            <ul>
+              <li>The filter icon was regularly mistaken for account blocking or reporting — iconography needed to be
+                clearer.</li>
+              <li>The report form didn't offer enough options to capture what testers actually wanted to flag.</li>
+              <li>A few prototype-only issues (unresponsive touch targets, a message icon that blended into the
+                background) got flagged for fixing.</li>
+            </ul>
+          </div>
+          <div class="case-frame frame-tall"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Design Impact</span>
+          <h2>Results</h2>
+        </div>
+        <div class="stat-grid">
+          <div class="stat-card reveal">
+            <div class="n">9/10</div>
+            <div class="l">Average overall experience rating</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="n">9.2/10</div>
+            <div class="l">Average task intuitiveness rating</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="n">−63%</div>
+            <div class="l">Drop in time on task vs. Round 1</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITERATION -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Iteration</span>
+          <h2>Closing the gaps testing surfaced</h2>
+        </div>
+        <div class="case-split">
+          <div class="case-text">
+            <p>Every formal-testing finding turned into a specific design change — nothing got fixed without a tester
+              pointing at exactly why it was confusing</p>
+            <ul>
+              <li>Enlarged and added contrast to iconography so it reads clearly against the pink background.</li>
+              <li>Increased touch target sizes across buttons to cut down interaction errors.</li>
+              <li>Redesigned the messaging icon so it no longer blends into a matched profile.</li>
+              <li>Rebuilt the report form to be more interactive, with clear support for selecting multiple reasons.</li>
+              <li>Added confirmation feedback whenever a user takes an important action, like reporting or matching.
+              </li>
+            </ul>
+          </div>
+          <div class="case-frame frame-tall"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITERATION: TAKEAWAYS -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Iteration</span>
+          <h2>What two rounds of testing actually proved</h2>
+        </div>
+        <div class="case-cols">
+          <div class="case-text">
+            <p>The gap between the two testing rounds ended up being the most useful data point in the whole project.
+              It wasn't just that the hi-fi prototype looked more finished testers moved through it in a third of the
+              time it took to get through the same tasks on paper, and rated it 9+ out of 10 on both experience and
+              intuitiveness.</p>
+            <p>Some of that gap was fidelity: color, real photography, and a tactile phone screen are simply easier to
+              navigate than pencil on an index card. But a real part of it was the design itself catching up to what
+              round-one testers were struggling with especially the block-and-report flow, which went from the slowest,
+              most confusing task to one of the fastest.</p>
+          </div>
+          <div class="case-text">
+            <p>The lesson I'm carrying forward: test the safety-critical flows first. Reporting and blocking aren't a
+              feature users browse casually they're the flow someone reaches for at their most uncomfortable moment,
+              and that's exactly where clarity matters most.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Reflection</span>
+          <h2>What two rounds of testing actually proved</h2>
+        </div>
+        <div class="reflect-list">
+          <div class="reflect-card">The gap between the two testing rounds was the most useful data point in the
+            project. Fidelity mattered less than expected testers moved through the hi-fi prototype in a third of the
+            time it took on paper, and rated it 9+ out of 10 on both experience and intuitiveness.</div>
+          <div class="reflect-card">The block-and-report flow went from the slowest, most confusing task in Round 1 to
+            one of the fastest in Round 2 a reminder to prioritize testing safety-critical flows before anything else
+            next time.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 Michael Solomon</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
