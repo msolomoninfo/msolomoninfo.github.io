@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Solomon — Was It Worth It? Case Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="page-case" id="top">
+
+  <nav>
+    <div class="wrap nav-row">
+      <a href="/index.html" class="logo"><span class="dot"></span>Michael Solomon</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="/about.html">About</a>
+        <a href="/projects.html" class="active">Projects</a>
+        <a href="/index.html#skills">Skills</a>
+        <a href="/index.html#contact">Contact</a>
+      </div>
+      <a href="/index.html#contact" class="btn btn-primary">Let's Chat</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap case-back">
+      <a href="/projects.html" class="back-link">← Back to projects</a>
+    </div>
+
+    <!-- BANNER -->
+    <header class="wrap case-banner">
+      <h1>Was It Worth It?</h1>
+      <p class="case-sub">A check-in app that interrupts the scroll to ask one honest question and what nine people
+        taught us when we put it in front of them.</p>
+      <div class="case-meta">
+        <div class="meta-card">
+          <div class="k">Role</div>
+          <div class="v">UX Designer and Researcher</div>
+        </div>
+        <div class="meta-card">
+          <div class="k">Timeline</div>
+          <div class="v">8 weeks</div>
+        </div>
+        <div class="meta-card">
+          <div class="k">Team</div>
+          <div class="v">Solo Project</div>
+        </div>
+        <div class="meta-card">
+          <div class="k">Tools</div>
+          <div class="v">Figma, UX Tweak</div>
+        </div>
+      </div>
+      <div class="case-frame frame-hero"></div>
+    </header>
+
+    <!-- OBJECTIVE -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Overview</span>
+          <h2>The Objective</h2>
+        </div>
+        <div class="case-cols">
+          <div class="case-text">
+            <p>Most people don't open TikTok, Instagram, or YouTube Shorts meaning to stay long. They open it to
+              disengage for a minute and the platforms are built to make sure that minute doesn't end on its own.</p>
+            <p>These feeds are algorithmically tuned to remove natural stopping points, turning a short mental break
+              into an hour of scrolling nobody chose. The cost shows up elsewhere: lost sleep, broken focus, less time
+              with the people in the room. Existing screen-time dashboards and app blockers exist, but they're easy to
+              dismiss and don't address the moment that actually matters how the session felt once it was over.</p>
+          </div>
+          <div class="case-text">
+            <p><strong>Primary audience:</strong> young adults, 18–28, largely college students and early-career
+              professionals the group with the highest reported daily usage and the most on the line when scrolling
+              collides with a deadline or a night's sleep.</p>
+            <p><strong>Constraints:</strong> tested against a deliberately wide age range (24–70) beyond that primary
+              audience, to stress-test the concept against more than one relationship to social media.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Research</span>
+          <h2>Discovery</h2>
+        </div>
+        <div class="case-cols">
+          <div class="case-text">
+            <p class="tight">Rather than just measuring screen time, "Was It Worth It?" gives users a recap the moment
+              they leave a social app: how long they scrolled, and one simple question did that actually make you feel
+              better than when you opened it? Over time, the pattern becomes visible.</p>
+            <p>To find out whether people could actually use it without guidance, a mixed-method usability study ran
+              across nine participants spanning ages 24 to 70 (mean age 39) a deliberately wide range, from retirees
+              to early-career professionals, to stress-test the design against more than one relationship to social
+              media.</p>
+          </div>
+          <div class="case-text">
+            <p class="list-title plain">Research methods:</p>
+            <ul>
+              <li>Round 1 — low fidelity wireframes, moderated with 6 testers</li>
+              <li>Round 2 — clickable hi-fi prototype, moderated with 7 new testers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="persona-grid">
+          <article class="persona-card reveal">
+            <div class="persona-photo" role="img" aria-label="Jamie persona photo"></div>
+            <h3>Jamie Chen, 20</h3>
+            <div class="persona-meta">College junior, marketing major</div>
+            <div class="persona-label">Goal</div>
+            <ul>
+              <li>Wants to feel less foggy and actually finish assignments before 2 am.</li>
+            </ul>
+            <div class="persona-label">Pain point</div>
+            <ul>
+              <li>Opens TikTok for "only 5 minutes" between study sessions, only to lose 90 minutes.</li>
+            </ul>
+            <div class="persona-label">Habit</div>
+            <ul>
+              <li>Opens TikTok for "only 5 minutes" between study sessions, only to lose 90 minutes.</li>
+            </ul>
+          </article>
+
+          <article class="persona-card reveal">
+            <div class="persona-photo" role="img" aria-label="Devon persona photo"></div>
+            <h3>Devon Smith, 26</h3>
+            <div class="persona-meta">Junior software engineer</div>
+            <div class="persona-label">Goal</div>
+            <ul>
+              <li>Scrolls Reels to decompress after work, but it never feels like real rest — spread across commute,
+                lunch, and every idle moment.</li>
+            </ul>
+            <div class="persona-label">Pain point</div>
+            <ul>
+              <li>Uses Reels to decompress after work, but it never feels like a real break.</li>
+            </ul>
+            <div class="persona-label">Habit</div>
+            <ul>
+              <li>Scrolls during commute, lunch, and every idle moment at his desk.</li>
+            </ul>
+          </article>
+
+          <article class="persona-card reveal">
+            <div class="persona-photo" role="img" aria-label="Sofia persona photo"></div>
+            <h3>Sofia Walker, 23</h3>
+            <div class="persona-meta">First-year nurse</div>
+            <div class="persona-label">Goal</div>
+            <ul>
+              <li>Needs a genuine mental reset after emotionally heavy 12 hour shifts.</li>
+            </ul>
+            <div class="persona-label">Pain point</div>
+            <ul>
+              <li>Scrolling numbs her out but leaves her more anxious, not calmer.</li>
+            </ul>
+            <div class="persona-label">Bio</div>
+            <p>Doom scrolls immediately after work as an escape from the day.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH: TASKS -->
+    <section class="case-section">
+      <div class="wrap">
+        <h3 class="case-h3">The five tasks</h3>
+        <p class="case-note">Each participant stepped into a short scenario, then attempted the task cold — no
+          walkthrough, no hints.</p>
+        <ol class="task-list">
+          <li>
+            <span class="num">01</span>
+            <div>
+              <div class="t">Leon: software engineer, scrolling TikTok late at night</div>
+              <div class="d">Snapped out of a scrolling haze well past when he meant to stop, mid-feed.</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div>
+              <div class="t">Sarah: college senior, just closed Instagram</div>
+              <div class="d">Wants to check in with herself after a study break that ran long, before diving back into
+                homework.</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div>
+              <div class="t">Dana: marketing manager, mid-deadline</div>
+              <div class="d">A quick YouTube Shorts detour pulled her attention off task; she wants a tighter limit
+                going forward.</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <div>
+              <div class="t">Aisha: freelance designer, a few weeks into using the app</div>
+              <div class="d">Sunday evening, her usual reflection time she wants proof the habit is working before she
+                commits further.</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">05</span>
+            <div>
+              <div class="t">Tim: privacy-conscious parent, just downloaded the app</div>
+              <div class="d">Doesn't want to hand over broad access right away wants to start narrow and expand later.
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- IDEATE: VISUAL LANGUAGE -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Ideate</span>
+          <h2>From paper to pixels</h2>
+        </div>
+        <div class="case-split">
+          <div class="case-text narrow">
+            <p class="tight">The visual redesign leans into four colors doing very deliberate jobs: deep olive for focus
+              and action, sage for gentle affirmation, warm tan for structure, and cream for a screen that reads as a
+              pause rather than another feed to consume.</p>
+            <p>A serif display face carries the moments that need warmth headlines, the confirmation screen, the
+              reflection prompt</p>
+            <div class="swatches" aria-label="Was It Worth It? color palette">
+              <span class="swatch" style="background:#546B41" title="Deep olive"></span>
+              <span class="swatch" style="background:#99AD7A" title="Sage"></span>
+              <span class="swatch" style="background:#DCCCAC" title="Warm tan"></span>
+              <span class="swatch" style="background:#FFF8EC" title="Cream"></span>
+            </div>
+          </div>
+          <div class="case-frame frame-wide"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDEATE: PAGE TYPES -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Ideate</span>
+          <h2>Three page types</h2>
+        </div>
+        <p class="case-lede">Each Page type was planned out to better understand the workflow.</p>
+
+        <h2 class="case-subhead">Low Fidelity</h2>
+        <div class="screen-row three">
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+        </div>
+
+        <h2 class="case-subhead">High Fidelity</h2>
+        <div class="screen-row three">
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+          <div class="case-frame screen"></div>
+        </div>
+
+        <div class="page-types three">
+          <div class="type-card">
+            <div class="t display">Check-In</div>
+            <div class="d">One honest yes-or-no, with an optional voice or text follow-up right after closing an app.
+            </div>
+          </div>
+          <div class="type-card">
+            <div class="t display">Reflections</div>
+            <div class="d">The weekly pattern — which platforms tend to leave a session feeling worse, and when.</div>
+          </div>
+          <div class="type-card">
+            <div class="t display">Connection</div>
+            <div class="d">Per-app tracking toggles and the scroll time limit, kept separate so access stays opt-in.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA SNAPSHOT -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Data Snapshot</span>
+          <h2>What the pre and post test numbers said</h2>
+        </div>
+        <p class="case-lede">Before touching the prototype, participants confirmed the problem was real. After using
+          it, the picture got more complicated.</p>
+        <div class="stat-grid four">
+          <div class="stat-card reveal">
+            <div class="n">2.8 hrs</div>
+            <div class="l">Average estimated daily social media use across participants</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="n">100%</div>
+            <div class="l">Had opened an app "briefly" and lost 30+ minutes without noticing</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="n">14%</div>
+            <div class="l">Currently use any screen-time or app-blocking tool</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="n">28.6%</div>
+            <div class="l">Believed repeated "was it worth it?" prompts would actually change their behavior over time
+            </div>
+          </div>
+        </div>
+
+        <div class="score-bars">
+          <div class="score">
+            <div class="score-row"><span>Ease of understanding</span><span>6.6 / 10</span></div>
+            <div class="bar" role="img" aria-label="6.6 out of 10"><span style="width:66%"></span></div>
+          </div>
+          <div class="score">
+            <div class="score-row"><span>Likelihood to use if free</span><span>6.6 / 10</span></div>
+            <div class="bar" role="img" aria-label="6.6 out of 10"><span style="width:66%"></span></div>
+          </div>
+          <div class="score">
+            <div class="score-row"><span>"Would change my behavior over time"</span><span>28.6%</span></div>
+            <div class="bar" role="img" aria-label="28.6 percent"><span style="width:28.6%"></span></div>
+          </div>
+        </div>
+
+        <p class="case-note wide">The gap between those two numbers is the real story: people found the app usable
+          enough and would consider it, but most weren't yet convinced the core mechanic the repeated question would
+          land differently than any other notification they've learned to dismiss.</p>
+      </div>
+    </section>
+
+    <!-- WHAT WE FOUND -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">What We Found</span>
+          <h2>Three problems stood between people and the point of the app</h2>
+        </div>
+        <p class="case-lede">All three findings trace back to the same root cause: the prototype asks people to
+          reflect, but doesn't yet give them a stable, legible place to do it.</p>
+
+        <div class="finding-list">
+          <article class="finding-card">
+            <div class="finding-head">
+              <span class="sev sev-critical">Critical</span>
+              <h3>The Reflections screen reads backwards</h3>
+            </div>
+            <p>Task 4 asked participants to find which platform left them feeling worst. Just 43% picked correctly the
+              layout's visual hierarchy pointed people toward the opposite conclusion the data actually supported, and
+              there was no confirming state once they'd "finished" the task.</p>
+            <div class="mini-stats">
+              <div><b>57%</b><span>answered incorrectly</span></div>
+              <div><b>43%</b><span>identified the right platform</span></div>
+              <div><b>0</b><span>confirmation or next step after the task</span></div>
+            </div>
+          </article>
+
+          <article class="finding-card">
+            <div class="finding-head">
+              <span class="sev sev-high">High</span>
+              <h3>People get stuck looping between the same screens</h3>
+            </div>
+            <p>With no persistent "home" or exit, first-time users defaulted to backtracking whenever they got lost,
+              hoping to reset. Task 2 logging how a session felt took the longest of any task on average, largely
+              because it was most people's first real encounter with the flow.</p>
+            <div class="mini-stats">
+              <div><b>1m 32s</b><span>average time on Task 2</span></div>
+              <div><b>0</b><span>persistent exit or home affordance</span></div>
+            </div>
+          </article>
+
+          <article class="finding-card">
+            <div class="finding-head">
+              <span class="sev sev-high">High</span>
+              <h3>Two entry points look like one</h3>
+            </div>
+            <p>Task 1 simulates being interrupted mid-scroll, inside a social app; Task 2 simulates opening the check-in
+              on your own, after you've already closed it. Participants repeatedly couldn't tell the two apart the
+              visual language didn't distinguish "the app caught me" from "I came here myself," so people applied the
+              wrong mental model to each.</p>
+          </article>
+        </div>
+
+        <blockquote class="pull-quote">"The interface's current state is riddled with navigation gaps — but the flows
+          and visual language underneath are worth building on."</blockquote>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Recommendations</span>
+          <h2>What each finding points to</h2>
+        </div>
+        <div class="rec-table-wrap">
+          <table class="rec-table">
+            <thead>
+              <tr><th>Finding</th><th>Recommendation</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Reflections is unreadable</td>
+                <td>Reformat around the single actionable insight, simplify the platform comparison so the "worse"
+                  platform is visually obvious, and add clear navigation once the user has seen it.</td>
+              </tr>
+              <tr>
+                <td>Users get stuck looping</td>
+                <td>Add a confirmation state after every completed action and a persistent exit or home control on
+                  every screen, so backtracking is never the only way out.</td>
+              </tr>
+              <tr>
+                <td>Entry points look identical</td>
+                <td>Give the interrupted-mid-scroll flow and the self-initiated check-in distinct visual treatments, so
+                  the context is legible before the user reads a word.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT SURPRISED US -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">What Surprised Us</span>
+          <h2>Two findings that weren't on the research plan</h2>
+        </div>
+        <div class="surprise-grid">
+          <article class="surprise-card">
+            <h3>It's not just social media</h3>
+            <p>Older participants pushed back on the framing. Their doomscrolling wasn't TikTok it was news sites and
+              the links that follow them out of an email inbox. The underlying pattern, an algorithm-shaped absence of
+              a stopping point, isn't unique to social platforms. It suggests the eventual scope of the tool may need
+              to widen past the apps it started with.</p>
+          </article>
+          <article class="surprise-card">
+            <h3>Reflection can read as guilt</h3>
+            <p>Only 28.6% of participants thought a repeated "was it worth it?" prompt would change their behavior over
+              time most expected to eventually dismiss it like any other notification, and several said it felt more
+              like guilt than guidance. And yet every single participant admitted social media keeps them scrolling
+              longer than they mean to. The demand for the tool is real; the current delivery of the question isn't
+              yet landing the way it's meant to.</p>
+            <div class="mini-stats">
+              <div><b>100%</b><span>lose track of time scrolling</span></div>
+              <div><b>28.6%</b><span>think the prompt would change that</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">What Surprised Us</span>
+          <h2>Two findings that weren't on the research plan</h2>
+        </div>
+        <div class="reflect-list">
+          <div class="closing-card">
+            <p class="big">People want help stepping back from the scroll. The current prototype proves the idea it just
+              hasn't yet built the interface calm enough, and clear enough, to earn that reflection instead of
+              demanding it.</p>
+            <p class="next">Next: rebuild Reflections around one legible insight, give every screen a way out, and
+              rethink the prompt itself so it reads as an offer, not a scold.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 Michael Solomon</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
