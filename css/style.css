@@ -218,6 +218,7 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
   position:absolute;inset:0;
   width:100%;height:100%;
   object-fit:cover;
+  object-position:47% center;
   display:block;
 }
 .about-photo .tag{
