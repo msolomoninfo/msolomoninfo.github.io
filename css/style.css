@@ -35,7 +35,6 @@ a{color:inherit;text-decoration:none;}
 nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur(10px);border-bottom:3px solid var(--border);z-index:20;}
 .nav-row{display:flex;align-items:center;justify-content:space-between;height:82px;}
 .logo{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:20px;display:flex;align-items:center;gap:8px;}
-.logo .dot{width:10px;height:10px;border-radius:50%;background:var(--coral);border:2px solid var(--border);}
 .nav-links{display:flex;gap:34px;font-size:15px;font-weight:600;color:var(--ink);}
 .nav-links a.active{color:var(--coral);}
 .nav-links a:hover{color:var(--coral);}
@@ -69,16 +68,6 @@ nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur
 
 /* HERO */
 .hero{padding:70px 0 30px;text-align:center;}
-.pill{
-  display:inline-flex;align-items:center;gap:6px;
-  background:var(--orange);
-  border:3px solid var(--border);
-  border-radius:999px;
-  padding:8px 18px;
-  font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;
-  letter-spacing:.08em;text-transform:uppercase;
-  box-shadow:var(--shadow-sm);
-}
 .hero h1{
   margin-top:24px;
   font-size:56px;font-weight:700;
@@ -103,7 +92,7 @@ nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur
 
 /* PROJECTS */
 .proj-card{
-  background:var(--orange);
+  background:var(--cream);
   border:4px solid var(--border);
   border-radius:var(--radius);
   box-shadow:6px 5px 0px 0px var(--border);
@@ -112,8 +101,6 @@ nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur
   margin-bottom:32px;
   transition:transform .15s ease, box-shadow .15s ease;
 }
-.proj-card:nth-child(even){background:var(--orange);}
-.proj-card:hover{transform:translate(-3px,-3px);box-shadow:9px 8px 0px 0px var(--border);}
 @media (max-width:800px){.proj-card{flex-direction:column;align-items:flex-start;}}
 .proj-text{flex:1;min-width:0;}
 .proj-text h3{font-size:26px;font-weight:700;margin-bottom:12px;}
@@ -126,10 +113,7 @@ nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur
   display:flex;align-items:center;justify-content:center;
 }
 @media (max-width:800px){.proj-visual{width:100%;}}
-.proj-visual.v1{background:var(--cream);}
-.proj-visual.v2{background:#fff;}
 .proj-visual img{width:100%;height:100%;object-fit:cover;}
-.proj-visual.v2 img{object-fit:contain;padding:24px;}
 
 /* SKILLS */
 .skills-grid{
@@ -144,13 +128,11 @@ nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur
   padding:32px 36px;
   transition:transform .15s ease, box-shadow .15s ease;
 }
-.skill-category:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0px 0px var(--border);}
 .skill-category h3{
   font-size:20px;font-weight:700;
   display:flex;align-items:center;gap:10px;
   margin-bottom:20px;
 }
-.skill-category .cat-icon{color:var(--coral);font-size:16px;}
 .skill-tags{display:flex;flex-wrap:wrap;gap:10px;}
 .tag-chip{
   font-family:'Chakra Petch',sans-serif;
@@ -163,7 +145,6 @@ nav{position:sticky;top:0;background:rgba(255,240,188,0.92);backdrop-filter:blur
   cursor:default;
   transition:transform .12s ease, box-shadow .12s ease;
 }
-.tag-chip:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0px 0px var(--border);}
 
 /* CONTACT */
 .contact{background:var(--cream);border-top:3px solid var(--border);text-align:center;padding:100px 0;}
@@ -221,12 +202,6 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
   object-position:47% center;
   display:block;
 }
-.about-photo .tag{
-  position:absolute;top:20px;left:20px;
-  background:var(--cream);border:3px solid var(--border);border-radius:999px;
-  padding:8px 16px;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:13px;
-  box-shadow:var(--shadow-sm);
-}
 .about-content{
   background:var(--cream);
   border:3px solid var(--border);
@@ -270,7 +245,7 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
 .exp-stack{display:flex;flex-direction:column;gap:50px;}
 
 .exp-group{
-  background:var(--orange);
+  background:var(--cream);
   border:3px solid var(--border);
   border-radius:var(--radius);
   box-shadow:var(--shadow);
@@ -313,7 +288,6 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
 .timeline-role-title{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;}
 .timeline-role-meta{text-align:right;flex-shrink:0;}
 .timeline-role-year{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:15px;}
-.timeline-role-loc{font-size:14px;color:var(--ink);opacity:.7;margin-top:4px;font-weight:500;}
 @media (max-width:700px){
   .timeline-role{flex-direction:column;align-items:flex-start;gap:6px;}
   .timeline-role-meta{text-align:left;}
@@ -323,14 +297,13 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
 
 .exp-card{
   display:flex;align-items:center;justify-content:space-between;gap:24px;
-  background:var(--orange);
+  background:var(--cream);
   border:3px solid var(--border);
   border-radius:var(--radius);
   padding:32px 36px;
   box-shadow:var(--shadow);
   transition:transform .15s ease, box-shadow .15s ease;
 }
-.exp-card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0px 0px var(--border);}
 @media (max-width:700px){.exp-card{flex-direction:column;align-items:flex-start;}}
 .exp-main{display:flex;align-items:center;gap:24px;flex:1;}
 .exp-title{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;}
@@ -345,19 +318,18 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
 .page-projects main{flex:1;}
 .projects-list .section-head{align-items:center;margin-bottom:40px;}
 .projects-list .proj-card{
-  border:5px solid #000;
+  border:3px solid var(--border);
+  border-radius:var(--radius);
   box-shadow:4px 2px 0px 0px #000;
-  padding:50px 80px;
-  margin-bottom:40px;
+  box-shadow:var(--shadow);
+  padding:32px 36px;
 }
-.projects-list .proj-card:hover{box-shadow:7px 5px 0px 0px #000;}
 .projects-list .proj-text h3{font-size:28px;}
 .projects-list .proj-text p{max-width:420px;}
 .projects-list .proj-visual{
   width:340px;height:255px;
-  border:0;border-radius:0;box-shadow:none;
+  border:3px solid var(--border);border-radius:var(--radius);box-shadow:none;
 }
-.projects-list .proj-visual.v2 img{padding:0;}
 .projects-page .proj-card{margin-bottom:50px;}
 @media (max-width:800px){
   .projects-list .proj-card{padding:32px 24px;}
