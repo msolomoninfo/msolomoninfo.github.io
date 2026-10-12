@@ -73,12 +73,15 @@
         </div>
         <div class="case-cols">
           <div class="case-text">
-            <p>Most people don't open TikTok, Instagram, or YouTube Shorts meaning to stay long. They open it to
-              disengage for a minute and the platforms are built to make sure that minute doesn't end on its own.</p>
-            <p>These feeds are algorithmically tuned to remove natural stopping points, turning a short mental break
-              into an hour of scrolling nobody chose. The cost shows up elsewhere: lost sleep, broken focus, less time
-              with the people in the room. Existing screen-time dashboards and app blockers exist, but they're easy to
-              dismiss and don't address the moment that actually matters how the session felt once it was over.</p>
+            <p>“Was It Worth It?” is a mobile check-in app that interrupts a person's social media scrolling session and
+              asks them to reflect on how the session made them feel. Rather than simply blocking apps after a time
+              limit, it prompts a quick “was it worth it?” notification and logs the response. These responses turn
+              those check-ins into weekly reflections so people can see which platforms tend to leave them feeling
+              worse.</p>
+            <p>Designed to combat doomscrolling, the application halts users mid-scroll to prompt emotional reflection.
+              By utilizing intrusive notifications and providing concrete usage and reflection data, it offers clear
+              insights into their actions. Confronting the negative emotions that arise from scrolling ultimately
+              enables users to change their habits.</p>
           </div>
           <div class="case-text">
             <p><strong>Primary audience:</strong> young adults, 18–28, largely college students and early-career
@@ -100,19 +103,22 @@
         </div>
         <div class="case-cols">
           <div class="case-text">
-            <p class="tight">Rather than just measuring screen time, "Was It Worth It?" gives users a recap the moment
-              they leave a social app: how long they scrolled, and one simple question did that actually make you feel
-              better than when you opened it? Over time, the pattern becomes visible.</p>
-            <p>To find out whether people could actually use it without guidance, a mixed-method usability study ran
-              across nine participants spanning ages 24 to 70 (mean age 39) a deliberately wide range, from retirees
-              to early-career professionals, to stress-test the design against more than one relationship to social
-              media.</p>
+            <p>The objective of of testing was to measure, quantitatively, users could complete the app's core flows
+              without guidance. These users would respond to a check-in interruption, logging how a scrolling session
+              felt, adjusting the time-limit setting, reading their own reflection data, and configuring which
+              platforms are tracked.</p>
+            <p>This study combined moderated and unmoderated usability testing methods. For the moderated sessions, six
+              participants were provided a printed sheet with scenarios and used the Figma prototype on a mobile device
+              while being recorded. For the unmoderated testing, three participants completed the evaluation remotely
+              using shared links. Participants in both study groups completed pre- and post-test questionnaires to
+              evaluate the prevalence of the problem and assess how effectively the application fits into their daily
+              routines.</p>
           </div>
           <div class="case-text">
-            <p class="list-title plain">Research methods:</p>
+            <p class="list-title">Research methods:</p>
             <ul>
-              <li>Round 1 — low fidelity wireframes, moderated with 6 testers</li>
-              <li>Round 2 — clickable hi-fi prototype, moderated with 7 new testers</li>
+              <li>Round 1: low fidelity wireframes, moderated with 6 testers</li>
+              <li>Round 2: clickable hi-fi prototype, moderated and unmoderated with 6 testers</li>
             </ul>
           </div>
         </div>
@@ -142,8 +148,7 @@
             <div class="persona-meta">Junior software engineer</div>
             <div class="persona-label">Goal</div>
             <ul>
-              <li>Scrolls Reels to decompress after work, but it never feels like real rest — spread across commute,
-                lunch, and every idle moment.</li>
+              <li>Wants real downtime that leaves him rested, not drained.</li>
             </ul>
             <div class="persona-label">Pain point</div>
             <ul>
@@ -168,59 +173,11 @@
               <li>Scrolling numbs her out but leaves her more anxious, not calmer.</li>
             </ul>
             <div class="persona-label">Bio</div>
-            <p>Doom scrolls immediately after work as an escape from the day.</p>
+            <ul>
+              <li>Doom scrolls immediately after work as an escape from the day.</li>
+            </ul>
           </article>
         </div>
-      </div>
-    </section>
-
-    <!-- RESEARCH: TASKS -->
-    <section class="case-section">
-      <div class="wrap">
-        <h3 class="case-h3">The five tasks</h3>
-        <p class="case-note">Each participant stepped into a short scenario, then attempted the task cold — no
-          walkthrough, no hints.</p>
-        <ol class="task-list">
-          <li>
-            <span class="num">01</span>
-            <div>
-              <div class="t">Leon: software engineer, scrolling TikTok late at night</div>
-              <div class="d">Snapped out of a scrolling haze well past when he meant to stop, mid-feed.</div>
-            </div>
-          </li>
-          <li>
-            <span class="num">02</span>
-            <div>
-              <div class="t">Sarah: college senior, just closed Instagram</div>
-              <div class="d">Wants to check in with herself after a study break that ran long, before diving back into
-                homework.</div>
-            </div>
-          </li>
-          <li>
-            <span class="num">03</span>
-            <div>
-              <div class="t">Dana: marketing manager, mid-deadline</div>
-              <div class="d">A quick YouTube Shorts detour pulled her attention off task; she wants a tighter limit
-                going forward.</div>
-            </div>
-          </li>
-          <li>
-            <span class="num">04</span>
-            <div>
-              <div class="t">Aisha: freelance designer, a few weeks into using the app</div>
-              <div class="d">Sunday evening, her usual reflection time she wants proof the habit is working before she
-                commits further.</div>
-            </div>
-          </li>
-          <li>
-            <span class="num">05</span>
-            <div>
-              <div class="t">Tim: privacy-conscious parent, just downloaded the app</div>
-              <div class="d">Doesn't want to hand over broad access right away wants to start narrow and expand later.
-              </div>
-            </div>
-          </li>
-        </ol>
       </div>
     </section>
 
@@ -233,9 +190,9 @@
         </div>
         <div class="case-split">
           <div class="case-text narrow">
-            <p class="tight">The visual redesign leans into four colors doing very deliberate jobs: deep olive for focus
-              and action, sage for gentle affirmation, warm tan for structure, and cream for a screen that reads as a
-              pause rather than another feed to consume.</p>
+            <p class="tight">The visual redesign leans into four colors. Deep olive for focus and sage for gentle
+              affirmation, warm tan for structure, and cream for a screen that reads as a pause rather than another
+              feed to consume.</p>
             <p>A serif display face carries the moments that need warmth headlines, the confirmation screen, the
               reflection prompt</p>
             <div class="swatches" aria-label="Was It Worth It? color palette">
@@ -247,6 +204,66 @@
           </div>
           <div class="case-frame frame-wide"></div>
         </div>
+      </div>
+    </section>
+
+    <!-- IDEATE: THE FIVE TASKS -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Ideate</span>
+          <h2>The five tasks</h2>
+        </div>
+        <p class="case-lede">Each participant stepped into a short scenario, then attempted the task cold.</p>
+        <ol class="task-list">
+          <li>
+            <span class="num">01</span>
+            <div>
+              <div class="d">Leon is a software engineer who tends to lose track of time on TikTok late at night, which
+                he suspects is wrecking his sleep. He's in bed scrolling and has already blown past the point where he
+                meant to stop. He’s snapped out of his scrolling haze.</div>
+              <div class="t">Task: Respond to the app's interruption after scrolling</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div>
+              <div class="d">Leon is a software engineer who tends to lose track of time on TikTok late at night, which
+                he suspects is wrecking his sleep. He's in bed scrolling and has already blown past the point where he
+                meant to stop. He’s snapped out of his scrolling haze.</div>
+              <div class="t">Task: Respond to the app's interruption after scrolling</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div>
+              <div class="d">Dana is a marketing manager mid-deadline who opened YouTube Shorts for a couple of minutes
+                while waiting for a file to upload. She notices her attention has strayed from her original task and
+                finds it beneficial to adjust the timer to better fit her scrolling habits, setting it to 20 minutes.
+              </div>
+              <div class="t">Task: Change the app’s timer to 20 minutes</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <div>
+              <div class="d">Aisha is a freelance designer who's been using the app for a few weeks as part of a bigger
+                push toward healthier digital habits. It's Sunday evening, her usual time to reflect, and she wants to
+                know if any of this is actually working before she decides whether to keep going.</div>
+              <div class="t">Task: Find out which platform tends to leave her feeling worst</div>
+            </div>
+          </li>
+          <li>
+            <span class="num">05</span>
+            <div>
+              <div class="d">Tim is a privacy-conscious parent who just downloaded the app but doesn't want to hand over
+                broad access to their accounts right away. Tim wants to be selective about what gets tracked before
+                committing to anything more.</div>
+              <div class="t">Task: Set up the app to track only Instagram while keeping other platforms disconnected
+              </div>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -276,12 +293,12 @@
         <div class="page-types three">
           <div class="type-card">
             <div class="t display">Check-In</div>
-            <div class="d">One honest yes-or-no, with an optional voice or text follow-up right after closing an app.
-            </div>
+            <div class="d">One honest yes or no question, with an optional voice or text follow-up right after closing
+              an app.</div>
           </div>
           <div class="type-card">
             <div class="t display">Reflections</div>
-            <div class="d">The weekly pattern — which platforms tend to leave a session feeling worse, and when.</div>
+            <div class="d">Which platforms tend to leave a session feeling worse, and when.</div>
           </div>
           <div class="type-card">
             <div class="t display">Connection</div>
@@ -296,7 +313,7 @@
     <section class="case-section">
       <div class="wrap">
         <div class="case-head">
-          <span class="eyebrow">Data Snapshot</span>
+          <span class="eyebrow">Data</span>
           <h2>What the pre and post test numbers said</h2>
         </div>
         <p class="case-lede">Before touching the prototype, participants confirmed the problem was real. After using
@@ -342,6 +359,71 @@
       </div>
     </section>
 
+    <!-- TEST: ROUND 1 -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Test</span>
+          <h2>Round 1: Low Fidelity Prototype</h2>
+        </div>
+        <div class="case-split">
+          <div class="case-text">
+            <p>Five testers walked through hand-drawn screens on index cards before a single pixel was designed cheap
+              enough to throw away, real enough to expose problems early.</p>
+            <p class="list-title plain">What informal testing found</p>
+            <ul>
+              <li>Participants found the application’s concept compelling because of the problem's relevance today.
+                Many remarked on how the scenarios directly related to their own lives, noting that they frequently
+                engage in excessively scrolling sessions</li>
+              <li>A distinct age-related gap was observed in participants' understanding of the application's
+                mechanics. Specifically, the two older participants had more difficulty locating buttons in the
+                interface, whereas younger participants generally found certain buttons visually intuitive.</li>
+              <li>While most participants were comfortable navigating standard mobile apps, they hesitated here because
+                they had never encountered a behavioral health application of this kind before. Specific components,
+                such as the UI within the reflections tab, require more attention</li>
+              <li>The Reflections Tab posed the most significant usability challenge, with most participants struggling
+                to understand the information displayed. While some individuals were completely unable to interpret
+                the data, those who did manage to understand it reported that it required a lot of cognitive effort.
+              </li>
+            </ul>
+          </div>
+          <div class="case-frame frame-tall"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEST: ROUND 2 -->
+    <section class="case-section">
+      <div class="wrap">
+        <div class="case-head">
+          <span class="eyebrow">Test</span>
+          <h2>Round 2: High Fidelity Prototype</h2>
+        </div>
+        <div class="case-split">
+          <div class="case-text">
+            <p>Five testers walked through hand-drawn screens on index cards before a single pixel was designed cheap
+              enough to throw away, real enough to expose problems early.</p>
+            <table class="task-table">
+              <thead>
+                <tr><th>Task</th><th>Avg. time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>1. Answer Interruption</td><td>1:11</td></tr>
+                <tr><td>2. Log Scrolling Session</td><td>1:32</td></tr>
+                <tr><td>3. Change Timer</td><td>1:07</td></tr>
+                <tr><td>3. Reflection</td><td>0:56</td></tr>
+                <tr><td>3. Control Permissions</td><td>0:58</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><td>Total per tester</td><td>5:44</td></tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="case-frame frame-tall"></div>
+        </div>
+      </div>
+    </section>
+
     <!-- WHAT WE FOUND -->
     <section class="case-section">
       <div class="wrap">
@@ -355,7 +437,6 @@
         <div class="finding-list">
           <article class="finding-card">
             <div class="finding-head">
-              <span class="sev sev-critical">Critical</span>
               <h3>The Reflections screen reads backwards</h3>
             </div>
             <p>Task 4 asked participants to find which platform left them feeling worst. Just 43% picked correctly the
@@ -364,38 +445,32 @@
             <div class="mini-stats">
               <div><b>57%</b><span>answered incorrectly</span></div>
               <div><b>43%</b><span>identified the right platform</span></div>
-              <div><b>0</b><span>confirmation or next step after the task</span></div>
             </div>
           </article>
 
           <article class="finding-card">
             <div class="finding-head">
-              <span class="sev sev-high">High</span>
               <h3>People get stuck looping between the same screens</h3>
             </div>
-            <p>With no persistent "home" or exit, first-time users defaulted to backtracking whenever they got lost,
-              hoping to reset. Task 2 logging how a session felt took the longest of any task on average, largely
-              because it was most people's first real encounter with the flow.</p>
+            <p>The absence of clear orientation markers or a "home" state meant users defaulted to revisiting previous
+              screens in an attempt to reset or find an exit, resulting in the observed circular navigation patterns.
+              Task 2 logging how a session felt took the longest of any task on average, largely because it was most
+              people's first real encounter with the flow.</p>
             <div class="mini-stats">
               <div><b>1m 32s</b><span>average time on Task 2</span></div>
-              <div><b>0</b><span>persistent exit or home affordance</span></div>
             </div>
           </article>
 
           <article class="finding-card">
             <div class="finding-head">
-              <span class="sev sev-high">High</span>
               <h3>Two entry points look like one</h3>
             </div>
-            <p>Task 1 simulates being interrupted mid-scroll, inside a social app; Task 2 simulates opening the check-in
-              on your own, after you've already closed it. Participants repeatedly couldn't tell the two apart the
-              visual language didn't distinguish "the app caught me" from "I came here myself," so people applied the
-              wrong mental model to each.</p>
+            <p>Task 1 simulated an active interruption mid-feed within a social media environment, whereas Task 2
+              required launching the check-in directly from the standalone application after closing a platform.
+              Participants repeatedly failed to distinguish between these entry points due to visual and structural
+              ambiguities across the two interface flows.</p>
           </article>
         </div>
-
-        <blockquote class="pull-quote">"The interface's current state is riddled with navigation gaps — but the flows
-          and visual language underneath are worth building on."</blockquote>
       </div>
     </section>
 
@@ -414,18 +489,18 @@
             <tbody>
               <tr>
                 <td>Reflections is unreadable</td>
-                <td>Reformat around the single actionable insight, simplify the platform comparison so the "worse"
-                  platform is visually obvious, and add clear navigation once the user has seen it.</td>
+                <td>Reformat the Reflections page to prioritize actionable insights, simplify data visualization to show
+                  clear platform comparisons. Add prominent navigation buttons to improve discoverability.</td>
               </tr>
               <tr>
-                <td>Users get stuck looping</td>
-                <td>Add a confirmation state after every completed action and a persistent exit or home control on
-                  every screen, so backtracking is never the only way out.</td>
+                <td>Users get stuck looping between the same 2–3 screens</td>
+                <td>Implement clear success/confirmation states and persistent exit buttons on every screen to prevent
+                  users from getting stuck in navigation loops.</td>
               </tr>
               <tr>
-                <td>Entry points look identical</td>
-                <td>Give the interrupted-mid-scroll flow and the self-initiated check-in distinct visual treatments, so
-                  the context is legible before the user reads a word.</td>
+                <td>Visual miscommunication first two tasks</td>
+                <td>Introduce distinct visual cues for the different entry points to reduce user confusion regarding
+                  task context.</td>
               </tr>
             </tbody>
           </table>
@@ -464,20 +539,20 @@
       </div>
     </section>
 
-    <!-- CLOSING -->
+    <!-- REFLECTION -->
     <section class="case-section">
       <div class="wrap">
         <div class="case-head">
-          <span class="eyebrow">What Surprised Us</span>
-          <h2>Two findings that weren't on the research plan</h2>
+          <span class="eyebrow">Reflection</span>
+          <h2>Conclusion</h2>
         </div>
         <div class="reflect-list">
           <div class="closing-card">
-            <p class="big">People want help stepping back from the scroll. The current prototype proves the idea it just
-              hasn't yet built the interface calm enough, and clear enough, to earn that reflection instead of
-              demanding it.</p>
-            <p class="next">Next: rebuild Reflections around one legible insight, give every screen a way out, and
-              rethink the prompt itself so it reads as an offer, not a scold.</p>
+            <p class="body">"Was It Worth It?" usability study reveals a clear demand for screen-time management tools,
+              but highlights critical friction points within the current prototype. While participants recognize the
+              value of the app's intent, the core navigation loops and confusing interface elements hinder the user
+              experience. To drive long-term adoption and shift user behavior effectively, future iterations must
+              prioritize interface clarity and workflow efficiency.</p>
           </div>
         </div>
       </div>

@@ -661,6 +661,7 @@ footer{border-top:3px solid var(--border);padding:32px 0;background:var(--cream)
   font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:23px;line-height:1.5;
 }
 .closing-card .next{max-width:620px;margin:16px auto 0;font-size:14px;line-height:1.6;font-weight:600;}
+.closing-card .body{max-width:720px;margin:0 auto;font-size:17px;line-height:1.75;font-weight:500;color:var(--ink);}
 @media (max-width:700px){.closing-card .big{font-size:19px;}}
 
 /* CONTACT MODAL */
